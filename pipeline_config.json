@@ -1,0 +1,33 @@
+
+{
+  "appname": "usepopcorn",
+  "technology": "reactjs",
+  "build": {
+    "container": false,
+    "buildType": "npm",
+    "buildDirectory": "build",
+    "artifactory": "nexus"
+  },
+  "qualitygates": {
+
+    "sonarProjectKey": "",
+    "sonarThreshold": "Level 2",
+    "auto-remove-sonar-exclusions": true,
+    "auto-elevate-sonar-threshold": true,
+
+    "trivyThreshold": "high",
+    "auto-remove-trivy-exclusions": true,
+    "auto-elevate-trivy-threshold": ,
+
+    "checkmarxGroup": "",
+    "checkmarxThreshold": "",
+
+    "jfrogServerId": "",
+    "watches": ""
+
+
+  },
+  "deployment": {
+    "deployType": "nginx"
+  }
+}
